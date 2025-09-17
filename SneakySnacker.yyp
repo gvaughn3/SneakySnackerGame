@@ -35,7 +35,7 @@
   },
   "name":"SneakySnacker",
   "resources":[
-    {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},},
+    {"id":{"name":"obj_buddy","path":"objects/obj_buddy/obj_buddy.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",

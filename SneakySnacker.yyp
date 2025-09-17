@@ -36,6 +36,7 @@
   "name":"SneakySnacker",
   "resources":[
     {"id":{"name":"obj_buddy","path":"objects/obj_buddy/obj_buddy.yy",},},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",

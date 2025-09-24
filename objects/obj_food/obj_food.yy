@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy",
+  "%Name":"obj_food",
   "eventList":[],
   "managed":true,
-  "name":"obj_enemy",
+  "name":"obj_food",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_food",
+    "path":"sprites/spr_food/spr_food.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

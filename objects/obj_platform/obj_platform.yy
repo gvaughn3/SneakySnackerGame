@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_buddy",
+  "%Name":"obj_platform",
   "eventList":[],
   "managed":true,
-  "name":"obj_buddy",
+  "name":"obj_platform",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sp_platform",
+    "path":"sprites/sp_platform/sp_platform.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

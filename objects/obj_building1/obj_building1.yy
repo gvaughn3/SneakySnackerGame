@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_jar",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_building1",
+  "eventList":[],
   "managed":true,
-  "name":"obj_jar",
+  "name":"obj_building1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_jar1",
-    "path":"sprites/spr_jar1/spr_jar1.yy",
+    "name":"spr_building1",
+    "path":"sprites/spr_building1/spr_building1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

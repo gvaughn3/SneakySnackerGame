@@ -1,6 +1,6 @@
 if (picked_up) {
 	x = obj_player.x;
-	y = obj_player.y - 8;
+	y = obj_player.y - 120;
 }
 
 if (thrown){

@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_dumpster",
+    "path":"sprites/spr_dumpster/spr_dumpster.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

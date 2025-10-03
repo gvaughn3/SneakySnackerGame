@@ -4,10 +4,10 @@ hspeed = move * 4 * speed_multiplier;
 
 if (move < 0) {
     facing_right = false;
-    image_xscale = -1;
+    image_xscale = -2;
 } else if (move > 0) {
     facing_right = true;
-    image_xscale = 1;
+    image_xscale = 2;
 }
 
 if (!place_meeting(x, y + 1, obj_block)) {
@@ -15,7 +15,7 @@ if (!place_meeting(x, y + 1, obj_block)) {
 } else {
     vspeed = 0;
     if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
-        vspeed = -8;
+        vspeed = -12;
     }
 }
 

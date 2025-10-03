@@ -11,6 +11,6 @@ if (thrown){
 	if (place_meeting(x, y + 1, obj_block)){
 		thrown = false;
 		instance_destroy(self);
-		instance_create_layer(x, y, "Instances", obj_food)
+		instance_create_layer(x, y - 120, "Instances", obj_food)
 	}
 }

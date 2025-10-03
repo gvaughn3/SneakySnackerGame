@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_platform",
+  "%Name":"obj_block",
   "eventList":[],
   "managed":true,
-  "name":"obj_platform",
+  "name":"obj_block",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

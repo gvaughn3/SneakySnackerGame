@@ -8,12 +8,13 @@ vspeed += 0.3;
 
 x += hspeed;
 
-if (!place_meeting(x, y + vspeed, obj_platform)) {
+if (!place_meeting(x, y + vspeed, obj_block)) {
     y += vspeed;
 } else {
-    while (!place_meeting(x, y + sign(vspeed), obj_platform)) {
+    while (!place_meeting(x, y + sign(vspeed), obj_block)) {
         y += sign(vspeed);
     }
     vspeed = 0;
     hspeed = 0;
 }
+

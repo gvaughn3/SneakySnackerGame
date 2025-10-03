@@ -1,32 +1,43 @@
 var move = keyboard_check(vk_right) - keyboard_check(vk_left);
-hspeed = move * 4;
+var speed_multiplier = (holding_jar != noone) ? 0.5 : 1;
+hspeed = move * 4 * speed_multiplier;
 
-if (!place_meeting(x, y + 1, obj_platform)) {
+if (move < 0) {
+    facing_right = false;
+    image_xscale = -1;
+} else if (move > 0) {
+    facing_right = true;
+    image_xscale = 1;
+}
+
+if (!place_meeting(x, y + 1, obj_block)) {
     vspeed += 0.5;
 } else {
     vspeed = 0;
-	if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
-		vspeed = -8;
-	}
-
+    if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
+        vspeed = -8;
+    }
 }
 
 x += hspeed;
 y += vspeed;
 
-if (keyboard_check_pressed(ord("E")) && place_meeting(x, y, obj_jar) && holding_jar == noone)
-{ var found_jar = instance_place(x, y, obj_jar)
-	if (found_jar != noone){
-		holding_jar = found_jar
-		found_jar.picked_up = true
-	}
+if (keyboard_check_pressed(ord("E")) && place_meeting(x, y, obj_jar) && holding_jar == noone) {
+    var found_jar = instance_place(x, y, obj_jar);
+    if (found_jar != noone) {
+        holding_jar = found_jar;
+        found_jar.picked_up = true;
+    }
 }
 
-if (holding_jar != noone && keyboard_check_pressed(ord("F"))){
-	holding_jar.picked_up = false
-	holding_jar.thrown = true
-	holding_jar.vspeed = -6
-	holding_jar.hspeed = facing_right ? 6 : -6
-	holding_jar = noone
+if (holding_jar != noone && keyboard_check_pressed(ord("F"))) {
+    holding_jar.picked_up = false;
+    holding_jar.thrown = true;
+    holding_jar.vspeed = -6;
+    holding_jar.hspeed = facing_right ? 6 : -6;
+    holding_jar = noone;
 }
-	
+
+
+x = clamp(x, 0, room_width)
+y = clamp(y, 0, room_height)

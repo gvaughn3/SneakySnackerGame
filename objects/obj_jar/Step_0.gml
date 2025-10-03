@@ -8,7 +8,7 @@ if (thrown){
 	y += vspeed 
 	x += hspeed
 	
-	if (place_meeting(x, y + 1, obj_platform)){
+	if (place_meeting(x, y + 1, obj_block)){
 		thrown = false;
 		instance_destroy(self);
 		instance_create_layer(x, y, "Instances", obj_food)

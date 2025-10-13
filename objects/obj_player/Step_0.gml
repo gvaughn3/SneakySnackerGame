@@ -10,12 +10,29 @@ if (move < 0) {
     image_xscale = 2;
 }
 
+if(move != 0){
+	if(sprite_index != sp_player_run){
+		sprite_index = sp_player_run;
+		image_speed = 1;
+	}
+} else {
+	if(sprite_index != sp_player_idle){
+		sprite_index = sp_player_idle;
+		image_speed = 1;
+	}
+}
+
 if (!place_meeting(x, y + 1, obj_block)) {
     vspeed += 0.5;
+	if(sprite_index != sp_player_jump){
+		sprite_index = sp_player_jump;
+	}
 } else {
     vspeed = 0;
     if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
         vspeed = -12;
+		sprite_index = sp_player_jump;
+		image_speed = 1;
     }
 }
 

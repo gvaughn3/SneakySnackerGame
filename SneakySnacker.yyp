@@ -42,8 +42,14 @@
     {"id":{"name":"obj_jar","path":"objects/obj_jar/obj_jar.yy",},},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},},
+    {"id":{"name":"obj_startbutton","path":"objects/obj_startbutton/obj_startbutton.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"obj_tree1","path":"objects/obj_tree1/obj_tree1.yy",},},
     {"id":{"name":"obj_tree2","path":"objects/obj_tree2/obj_tree2.yy",},},
+    {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sp_platform","path":"sprites/sp_platform/sp_platform.yy",},},
     {"id":{"name":"sp_player","path":"sprites/sp_player/sp_player.yy",},},
@@ -51,12 +57,21 @@
     {"id":{"name":"spr_bush2","path":"sprites/spr_bush2/spr_bush2.yy",},},
     {"id":{"name":"spr_food","path":"sprites/spr_food/spr_food.yy",},},
     {"id":{"name":"spr_jar","path":"sprites/spr_jar/spr_jar.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"spr_jar1","path":"sprites/spr_jar1/spr_jar1.yy",},},
+    {"id":{"name":"spr_lamp","path":"sprites/spr_lamp/spr_lamp.yy",},},
+    {"id":{"name":"spr_snacker","path":"sprites/spr_snacker/spr_snacker.yy",},},
+    {"id":{"name":"spr_sneaky","path":"sprites/spr_sneaky/spr_sneaky.yy",},},
+    {"id":{"name":"spr_start","path":"sprites/spr_start/spr_start.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_tree1","path":"sprites/spr_tree1/spr_tree1.yy",},},
     {"id":{"name":"spr_tree2","path":"sprites/spr_tree2/spr_tree2.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",

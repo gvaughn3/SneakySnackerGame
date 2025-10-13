@@ -22,14 +22,32 @@
     {"name":"obj_food","order":3,"path":"objects/obj_food/obj_food.yy",},
     {"name":"obj_gamecontroller","order":4,"path":"objects/obj_gamecontroller/obj_gamecontroller.yy",},
     {"name":"obj_jar","order":2,"path":"objects/obj_jar/obj_jar.yy",},
+<<<<<<< Updated upstream
     {"name":"obj_platform","order":1,"path":"objects/obj_platform/obj_platform.yy",},
     {"name":"obj_tree1","order":5,"path":"objects/obj_tree1/obj_tree1.yy",},
     {"name":"obj_tree2","order":6,"path":"objects/obj_tree2/obj_tree2.yy",},
+=======
+    {"name":"obj_projectile","order":9,"path":"objects/obj_projectile/obj_projectile.yy",},
+    {"name":"obj_startbutton","order":12,"path":"objects/obj_startbutton/obj_startbutton.yy",},
+    {"name":"obj_tree1","order":5,"path":"objects/obj_tree1/obj_tree1.yy",},
+    {"name":"obj_tree2","order":6,"path":"objects/obj_tree2/obj_tree2.yy",},
+    {"name":"Menu","order":1,"path":"rooms/Menu/Menu.yy",},
+    {"name":"alert","order":2,"path":"sounds/alert/alert.yy",},
+    {"name":"jump","order":1,"path":"sounds/jump/jump.yy",},
+>>>>>>> Stashed changes
     {"name":"sp_platform","order":1,"path":"sprites/sp_platform/sp_platform.yy",},
     {"name":"spr_bush1","order":6,"path":"sprites/spr_bush1/spr_bush1.yy",},
     {"name":"spr_bush2","order":7,"path":"sprites/spr_bush2/spr_bush2.yy",},
     {"name":"spr_food","order":3,"path":"sprites/spr_food/spr_food.yy",},
     {"name":"spr_jar","order":2,"path":"sprites/spr_jar/spr_jar.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"spr_jar1","order":9,"path":"sprites/spr_jar1/spr_jar1.yy",},
+    {"name":"spr_lamp","order":14,"path":"sprites/spr_lamp/spr_lamp.yy",},
+    {"name":"spr_snacker","order":12,"path":"sprites/spr_snacker/spr_snacker.yy",},
+    {"name":"spr_sneaky","order":11,"path":"sprites/spr_sneaky/spr_sneaky.yy",},
+    {"name":"spr_start","order":13,"path":"sprites/spr_start/spr_start.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_tree1","order":4,"path":"sprites/spr_tree1/spr_tree1.yy",},
     {"name":"spr_tree2","order":5,"path":"sprites/spr_tree2/spr_tree2.yy",},
   ],

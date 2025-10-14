@@ -1,3 +1,9 @@
 holding_jar = noone
 facing_right = true
 move_speed = 6
+slingshot_charge = 0;
+is_charging = false;
+is_hiding = false;
+lives = 3;
+food_collected = 0;
+can_move = true;

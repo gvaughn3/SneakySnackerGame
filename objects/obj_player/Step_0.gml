@@ -32,6 +32,7 @@ if (!place_meeting(x, y + 1, obj_block)) {
     if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
         vspeed = -12;
 		sprite_index = sp_player_jump;
+		
 		image_speed = 1;
     }
 }
@@ -53,6 +54,27 @@ if (holding_jar != noone && keyboard_check_pressed(ord("F"))) {
     holding_jar.vspeed = -6;
     holding_jar.hspeed = facing_right ? 6 : -6;
     holding_jar = noone;
+}
+
+if (mouse_check_button_pressed(mb_left)) {
+    slingshot_charge = 0;
+    is_charging = true;
+}
+
+if (mouse_check_button(mb_left) && is_charging) {
+    slingshot_charge += 0.5;
+    slingshot_charge = clamp(slingshot_charge, 0, 20);
+}
+
+if (mouse_check_button_released(mb_left) && is_charging) {
+    var shoot_dir = point_direction(x, y, mouse_x, mouse_y);
+    
+    var proj = instance_create_layer(x, y, "Instances", obj_slingshot_projectile);
+    proj.speed = slingshot_charge;
+    proj.direction = shoot_dir;
+    
+    slingshot_charge = 0;
+    is_charging = false;
 }
 
 

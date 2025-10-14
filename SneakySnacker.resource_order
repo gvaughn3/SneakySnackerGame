@@ -37,6 +37,7 @@
     {"name":"jump","order":1,"path":"sounds/jump/jump.yy",},
     {"name":"Grass_Road","order":18,"path":"sprites/Grass_Road/Grass_Road.yy",},
     {"name":"road","order":15,"path":"sprites/road/road.yy",},
+    {"name":"sp_Background_Image","order":20,"path":"sprites/sp_Background_Image/sp_Background_Image.yy",},
     {"name":"sp_platform","order":1,"path":"sprites/sp_platform/sp_platform.yy",},
     {"name":"sp_player_idle","order":11,"path":"sprites/sp_player_idle/sp_player_idle.yy",},
     {"name":"sp_player_jump","order":13,"path":"sprites/sp_player_jump/sp_player_jump.yy",},

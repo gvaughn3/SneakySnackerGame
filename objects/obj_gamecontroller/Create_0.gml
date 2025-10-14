@@ -1,3 +1,6 @@
+global.time_remaining = 50 * room_speed
+global.game_over = false
+
 global.lives = 3
 global.score = 0
 
@@ -7,3 +10,5 @@ timer = time_limit;
 
 game_over = false;
 player_won = false;
+
+global.game_over = false

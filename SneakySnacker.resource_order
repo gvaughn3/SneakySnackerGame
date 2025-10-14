@@ -32,6 +32,7 @@
     {"name":"obj_slingshot_projectile","order":9,"path":"objects/obj_slingshot_projectile/obj_slingshot_projectile.yy",},
     {"name":"obj_tree1","order":5,"path":"objects/obj_tree1/obj_tree1.yy",},
     {"name":"obj_tree2","order":6,"path":"objects/obj_tree2/obj_tree2.yy",},
+    {"name":"obj_tree3","order":16,"path":"objects/obj_tree3/obj_tree3.yy",},
     {"name":"alert","order":2,"path":"sounds/alert/alert.yy",},
     {"name":"jump","order":1,"path":"sounds/jump/jump.yy",},
     {"name":"Grass_Road","order":18,"path":"sprites/Grass_Road/Grass_Road.yy",},
@@ -52,5 +53,6 @@
     {"name":"spr_lamppost","order":17,"path":"sprites/spr_lamppost/spr_lamppost.yy",},
     {"name":"spr_tree1","order":4,"path":"sprites/spr_tree1/spr_tree1.yy",},
     {"name":"spr_tree2","order":5,"path":"sprites/spr_tree2/spr_tree2.yy",},
+    {"name":"spr_tree3","order":19,"path":"sprites/spr_tree3/spr_tree3.yy",},
   ],
 }

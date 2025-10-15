@@ -81,6 +81,7 @@
     {"id":{"name":"spr_controls","path":"sprites/spr_controls/spr_controls.yy",},},
     {"id":{"name":"spr_credits","path":"sprites/spr_credits/spr_credits.yy",},},
     {"id":{"name":"spr_dumpster","path":"sprites/spr_dumpster/spr_dumpster.yy",},},
+    {"id":{"name":"spr_Enemy_Patrol","path":"sprites/spr_Enemy_Patrol/spr_Enemy_Patrol.yy",},},
     {"id":{"name":"spr_food","path":"sprites/spr_food/spr_food.yy",},},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},
     {"id":{"name":"spr_jar","path":"sprites/spr_jar/spr_jar.yy",},},

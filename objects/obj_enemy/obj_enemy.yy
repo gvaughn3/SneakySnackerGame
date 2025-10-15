@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_player",
-    "path":"sprites/sp_player/sp_player.yy",
+    "name":"spr_Enemy_Patrol",
+    "path":"sprites/spr_Enemy_Patrol/spr_Enemy_Patrol.yy",
   },
   "spriteMaskId":null,
   "visible":true,

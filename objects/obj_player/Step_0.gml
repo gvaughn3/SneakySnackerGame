@@ -7,6 +7,9 @@ if (is_caught) {
     caught_timer -= 1;
     
     if (caught_timer <= 0) {
+		
+		//Lose a life once per reset
+		lives -= 1;
         // Reset to start
         x = start_x;
         y = start_y;

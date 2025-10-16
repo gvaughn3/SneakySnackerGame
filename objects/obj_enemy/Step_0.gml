@@ -37,10 +37,35 @@ if (dist_to_player <= detection_range && spotted_cooldown == 0) {
     }
     
     if (player_is_in_front && !obj_player.is_hiding) {
-        has_spotted_player = true;
-        spotted_cooldown = 120;
-        with (obj_player) {
-            event_user(0);
+        if (!has_spotted_player) {
+            // First time spotting - trigger caught sequence
+            audio_play_sound(alert, 5, false);
+            has_spotted_player = true;
+            
+            with (obj_player) {
+                is_caught = true;
+                caught_timer = 100; // 3 seconds at 60 FPS
+                
+                // Spawn flying food
+                repeat(food_collected) {
+                    var food = instance_create_layer(x, y, "Instances", obj_food);
+                    food.hspeed = random_range(-4, 4);
+                    food.vspeed = random_range(-6, -2);
+                    food.gravity = 0.3;
+                }
+                
+                food_collected = 0; // Reset food count
+            }
         }
+        spotted_cooldown = 120;
     }
+}
+
+if (instance_exists(obj_player)) {
+    var distance = point_distance(x, y, obj_player.x, obj_player.y);
+    var max_distance = 1500;
+    var volume = clamp(1 - (distance / max_distance), 0, 1);
+    
+    audio_sound_gain(walk_sound, volume, 100);
+    
 }

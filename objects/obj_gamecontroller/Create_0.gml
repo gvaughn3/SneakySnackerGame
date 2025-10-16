@@ -12,3 +12,9 @@ game_over = false;
 player_won = false;
 
 global.game_over = false
+
+if (audio_is_playing(menumusic)) {
+    audio_stop_sound(menumusic);
+}
+
+audio_play_sound(backgroundmusic, 1, true);

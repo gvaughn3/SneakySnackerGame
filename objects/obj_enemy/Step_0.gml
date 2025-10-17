@@ -36,29 +36,34 @@ if (dist_to_player <= detection_range && spotted_cooldown == 0) {
         player_is_in_front = true;
     }
     
-    if (player_is_in_front && !obj_player.is_hiding) {
-        if (!has_spotted_player) {
-            // First time spotting - trigger caught sequence
-            audio_play_sound(alert, 5, false);
-            has_spotted_player = true;
+if (player_is_in_front && !obj_player.is_hiding) {
+    if (!has_spotted_player) {
+        audio_play_sound(alert, 5, false);
+        has_spotted_player = true;
+        
+        with (obj_player) {
+            is_caught = true;
+            caught_timer = 180;
             
-            with (obj_player) {
-                is_caught = true;
-                caught_timer = 100; // 3 seconds at 60 FPS
-                
-                // Spawn flying food
-                repeat(food_collected) {
-                    var food = instance_create_layer(x, y, "Instances", obj_food);
-                    food.hspeed = random_range(-4, 4);
-                    food.vspeed = random_range(-6, -2);
-                    food.gravity = 0.3;
-                }
-                
-                food_collected = 0; // Reset food count
-            }
+            vspeed = 0;
+            hspeed = 0;
+            
+            if (food_collected > 0) {
+				show_debug_message("Dropping food: " + string(food_collected));
+				repeat(food_collected) {
+		        var food = instance_create_layer(x, y, "Instances", obj_food);
+		        food.sprite_index = spr_food;
+		        food.hspeed = random_range(-4, 4);
+		        food.vspeed = random_range(-6, -2);
+		        food.gravity = 0.3;
+			  }
+    
+			    food_collected = 0;
+			}
         }
-        spotted_cooldown = 120;
     }
+    spotted_cooldown = 120;
+}
 }
 
 if (instance_exists(obj_player)) {

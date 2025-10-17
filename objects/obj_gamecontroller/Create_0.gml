@@ -18,3 +18,8 @@ if (audio_is_playing(menumusic)) {
 }
 
 audio_play_sound(backgroundmusic, 1, true);
+
+if (global.lives <= 0) {
+    audio_stop_all();
+    room_goto(Menu);
+}

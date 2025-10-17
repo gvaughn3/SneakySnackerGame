@@ -19,7 +19,7 @@ draw_set_color(c_white);
 draw_self();
 
 if (is_hiding) {
-    draw_set_color(c_lime);
+    draw_set_color(c_yellow);
     draw_text(x, y - 50, "HIDING");
     draw_set_color(c_white);
 }

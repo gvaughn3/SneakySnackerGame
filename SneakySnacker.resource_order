@@ -56,6 +56,7 @@
     {"name":"sp_player_idle","order":11,"path":"sprites/sp_player_idle/sp_player_idle.yy",},
     {"name":"sp_player_jump","order":13,"path":"sprites/sp_player_jump/sp_player_jump.yy",},
     {"name":"sp_player_run","order":12,"path":"sprites/sp_player_run/sp_player_run.yy",},
+    {"name":"sp_player_slingshot","order":29,"path":"sprites/sp_player_slingshot/sp_player_slingshot.yy",},
     {"name":"spr_arrow","order":26,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_building1","order":10,"path":"sprites/spr_building1/spr_building1.yy",},
     {"name":"spr_building2","order":16,"path":"sprites/spr_building2/spr_building2.yy",},

@@ -6,9 +6,9 @@ if (is_caught) {
     caught_timer -= 1;
     
     if (caught_timer <= 0) {
-        global.lives -= 1;
+        lives -= 1;
         
-        if (global.lives <= 0) {
+        if (lives <= 0) {
             audio_stop_all();
             room_goto(Menu);
             exit;
@@ -76,6 +76,7 @@ if (holding_jar != noone && keyboard_check_pressed(ord("F"))) {
     holding_jar.hspeed = facing_right ? 6 : -6;
     holding_jar = noone;
 }
+
 if (mouse_check_button_pressed(mb_left)) {
     slingshot_charge = 0;
     is_charging = true;
@@ -83,9 +84,11 @@ if (mouse_check_button_pressed(mb_left)) {
 if (mouse_check_button(mb_left) && is_charging) {
     slingshot_charge += 0.5;
     slingshot_charge = clamp(slingshot_charge, 0, 20);
+	
 }
 if (mouse_check_button_released(mb_left) && is_charging) {
     var shoot_dir = point_direction(x, y, mouse_x, mouse_y);
+	sprite_index = sp_player_slingshot;
     
     var proj = instance_create_layer(x, y, "Instances", obj_slingshot_projectile);
     proj.speed = slingshot_charge;

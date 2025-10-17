@@ -1,4 +1,4 @@
-lives -= 1;
+
 
 if (food_collected > 0) {
     repeat(food_collected) {

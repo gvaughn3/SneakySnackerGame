@@ -1,4 +1,4 @@
-if (picked_up) {
+ if (picked_up) {
 	x = obj_player.x;
 	y = obj_player.y - 120;
 }

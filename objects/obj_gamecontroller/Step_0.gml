@@ -1,3 +1,12 @@
+// cheat codes
+
+// Alt + R to restart
+if (keyboard_check(vk_alt)) {
+    if (keyboard_check_pressed(ord("R"))) {
+        room_restart();
+    }
+}
+
 if (global.time_remaining > 0) {
     global.time_remaining -= 1;
 } else {

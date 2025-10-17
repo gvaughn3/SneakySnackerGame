@@ -1,4 +1,4 @@
-// Move in current direction
+ // Move in current direction
 x += move_speed * move_dir;
 
 // Flip sprite based on direction
@@ -51,7 +51,7 @@ if (player_is_in_front && !obj_player.is_hiding) {
             if (food_collected > 0) {
 				show_debug_message("Dropping food: " + string(food_collected));
 				repeat(food_collected) {
-		        var food = instance_create_layer(x, y, "Instances", obj_food);
+		        var food = instance_create_layer(x, y, "Instances", spr_food);
 		        food.sprite_index = spr_food;
 		        food.hspeed = random_range(-4, 4);
 		        food.vspeed = random_range(-6, -2);

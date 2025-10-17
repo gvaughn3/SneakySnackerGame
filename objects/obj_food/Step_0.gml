@@ -1,4 +1,4 @@
-if (collect_delay > 0){
+ if (collect_delay > 0){
 	collect_delay -= 1
 } else {
 	collectible = true

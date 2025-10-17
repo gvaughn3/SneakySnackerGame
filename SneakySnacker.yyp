@@ -81,6 +81,7 @@
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"spr_building1","path":"sprites/spr_building1/spr_building1.yy",},},
     {"id":{"name":"spr_building2","path":"sprites/spr_building2/spr_building2.yy",},},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_bush1","path":"sprites/spr_bush1/spr_bush1.yy",},},
     {"id":{"name":"spr_bush2","path":"sprites/spr_bush2/spr_bush2.yy",},},
     {"id":{"name":"spr_controls","path":"sprites/spr_controls/spr_controls.yy",},},

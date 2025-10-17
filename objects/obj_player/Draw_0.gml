@@ -27,7 +27,6 @@ if (is_hiding) {
 draw_self();
 
 draw_set_color(c_white);
-draw_text(x, y - 60, "Lives: " + string(lives));
 draw_text(10, 10, "Carrying: " + string(food_collected));
 draw_text(10, 30, "Saved: " + string(food_saved));
 draw_set_color(c_white);

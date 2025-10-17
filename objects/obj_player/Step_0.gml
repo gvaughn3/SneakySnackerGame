@@ -21,9 +21,9 @@ if (is_caught) {
     caught_timer -= 1;
     
     if (caught_timer <= 0) {
-        lives -= 1;
+        global.lives -= 1;
         
-        if (lives <= 0) {
+        if (global.lives <= 0) {
             audio_stop_all();
             room_goto(Menu);
             exit;

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"breakglass",
+  "%Name":"snd_pickup",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.4661905,
-  "name":"breakglass",
+  "duration":0.4781406,
+  "name":"snd_pickup",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"breakglass.wav",
+  "soundFile":"snd_pickup.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.67,
 }

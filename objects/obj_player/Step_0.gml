@@ -1,7 +1,8 @@
-var move = keyboard_check(vk_right) - keyboard_check(vk_left);
+var move = keyboard_check(vk_right) - keyboard_check(vk_left) + 
+           keyboard_check(ord("D")) - keyboard_check(ord("A"));
+move = clamp(move, -1, 1);
 var speed_multiplier = (holding_jar != noone) ? 0.5 : 1;
 hspeed = move * 4 * speed_multiplier;
-
 if (is_caught) {
     caught_timer -= 1;
     
@@ -25,9 +26,6 @@ if (is_caught) {
     
     exit;
 }
-
-var move = keyboard_check(vk_right) - keyboard_check(vk_left) + 
-           keyboard_check(ord("D")) - keyboard_check(ord("A"));
 if (move < 0) {
     facing_right = false;
     image_xscale = -2;
@@ -62,21 +60,21 @@ if (!place_meeting(x, y + 1, obj_block)) {
 }
 x += hspeed;
 y += vspeed;
-if (keyboard_check_pressed(ord("E")) && place_meeting(x, y, obj_jar) && holding_jar == noone) {
-    var found_jar = instance_place(x, y, obj_jar);
-    if (found_jar != noone) {
-        holding_jar = found_jar;
-        found_jar.picked_up = true;
+if (keyboard_check_pressed(ord("E"))) {
+    if (holding_jar != noone) {
+        holding_jar.picked_up = false;
+        holding_jar.thrown = true;
+        holding_jar.vspeed = -6;
+        holding_jar.hspeed = facing_right ? 6 : -6;
+        holding_jar = noone;
+    } else if (place_meeting(x, y, obj_jar)) {
+        var found_jar = instance_place(x, y, obj_jar);
+        if (found_jar != noone) {
+            holding_jar = found_jar;
+            found_jar.picked_up = true;
+        }
     }
 }
-if (holding_jar != noone && keyboard_check_pressed(ord("F"))) {
-    holding_jar.picked_up = false;
-    holding_jar.thrown = true;
-    holding_jar.vspeed = -6;
-    holding_jar.hspeed = facing_right ? 6 : -6;
-    holding_jar = noone;
-}
-
 if (mouse_check_button_pressed(mb_left)) {
     slingshot_charge = 0;
     is_charging = true;
@@ -84,8 +82,7 @@ if (mouse_check_button_pressed(mb_left)) {
 if (mouse_check_button(mb_left) && is_charging) {
     slingshot_charge += 0.5;
     slingshot_charge = clamp(slingshot_charge, 0, 20);
-	sprite_index = sp_player_charging;
-	
+    sprite_index = sp_player_charging;
 }
 if (mouse_check_button_released(mb_left) && is_charging) {
     var shoot_dir = point_direction(x, y, mouse_x, mouse_y);
@@ -93,7 +90,7 @@ if (mouse_check_button_released(mb_left) && is_charging) {
     var proj = instance_create_layer(x, y, "Instances", obj_slingshot_projectile);
     proj.speed = slingshot_charge;
     proj.direction = shoot_dir;
-	sprite_index = sp_player_ss_release;
+    sprite_index = sp_player_ss_release;
     
     slingshot_charge = 0;
     is_charging = false;

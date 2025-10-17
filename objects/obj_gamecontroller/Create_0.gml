@@ -1,4 +1,4 @@
-global.time_remaining = 50 * room_speed
+global.time_remaining = 90 * room_speed
 global.game_over = false
 
 global.lives = 3

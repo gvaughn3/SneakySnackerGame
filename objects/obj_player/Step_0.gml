@@ -1,3 +1,17 @@
+// perma hiding cheat code (Alt + H)
+if (keyboard_check(vk_alt) && keyboard_check_pressed(ord("H"))) {
+    global.perma_hiding = !global.perma_hiding;
+}
+
+if (global.perma_hiding) {
+    is_hiding = true;
+    is_caught = false;
+    with (obj_enemy) {
+        has_spotted_player = false;
+    }
+}
+//
+
 var move = keyboard_check(vk_right) - keyboard_check(vk_left) + 
            keyboard_check(ord("D")) - keyboard_check(ord("A"));
 move = clamp(move, -1, 1);

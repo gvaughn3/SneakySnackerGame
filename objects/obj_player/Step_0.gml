@@ -84,15 +84,16 @@ if (mouse_check_button_pressed(mb_left)) {
 if (mouse_check_button(mb_left) && is_charging) {
     slingshot_charge += 0.5;
     slingshot_charge = clamp(slingshot_charge, 0, 20);
+	sprite_index = sp_player_charging;
 	
 }
 if (mouse_check_button_released(mb_left) && is_charging) {
     var shoot_dir = point_direction(x, y, mouse_x, mouse_y);
-	sprite_index = sp_player_slingshot;
     
     var proj = instance_create_layer(x, y, "Instances", obj_slingshot_projectile);
     proj.speed = slingshot_charge;
     proj.direction = shoot_dir;
+	sprite_index = sp_player_ss_release;
     
     slingshot_charge = 0;
     is_charging = false;
